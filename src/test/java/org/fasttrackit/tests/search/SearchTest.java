@@ -19,7 +19,13 @@ public class SearchTest extends TestBase {
         HeaderSteps headerSteps = new HeaderSteps();
         headerSteps.search(keyword);
 
+try {
+    Thread.sleep(3000);
 
+}
+catch (InterruptedException err){
+    System.out.println("Results did not contain keyword");
+}
     }
 
     @Test
